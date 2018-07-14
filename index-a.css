@@ -1,0 +1,227 @@
+/* index.html 的样式 */
+
+
+/* header 开始 */
+#header{
+    height: 32px;
+    background: #f2f2f2;
+    /*background: #cccccc;*/
+    font-size: 12px;
+    line-height: 32px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+#login-info{
+    float: left;
+}
+
+#quick-menu{
+    float: right;
+}
+
+#quick-menu .menu{
+    float: left;
+    /*background: #222;*/
+    position: relative;
+    padding: 0 14px;
+    height: 33px;
+
+}
+
+#header a, #login-info span{
+    color: #999;
+}
+
+#header a{
+    /*padding: 0 14px;*/
+}
+
+#header a:hover{
+    color: #FF0036;
+}
+
+#header .triangle::after{
+    content: '';
+    border-width: 3px;
+    border-style: solid;
+    border-top-color: #bbb;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    width: 0;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    margin-top: -2px;
+
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    transform-origin:  3px 1.5px ;
+}
+
+#header .icon-gouwuchekong{
+    font-size: 12px;
+    color: #FF0036;
+}
+#login-info .register{
+    padding: 0;
+}
+
+#header .triangle:hover::after{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    -webkit-transition: transform .5s ease;
+    -moz-transition: transform .5s ease;
+    -ms-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+#header .triangle{
+    border-style: solid;
+    background-color: transparent;
+    border-width: 0 1px 0 1px;
+}
+#header .triangle :hover{
+    background-color: #fff;
+    border-color: #e5e5e5;
+    cursor: pointer;
+}
+#header .triangle:hover > a{
+    text-decoration: underline;
+    color: #FF0036;
+}
+#header .triangle:hover .submenu{
+    display: block;
+}
+#quick-menu .submenu a:hover{
+    text-decoration: underline;
+}
+#quick-menu .submenu{
+    position: absolute;
+    top: 32px;
+    left: -1px;
+    width: 74px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 0 1px 1px 1px;
+    padding: 0 14px;
+    display: none;
+    background: #ffffff;
+}
+#header .triangle:hover .favotite{
+    display: block;
+}
+#quick-menu .favotite a:hover{
+    text-decoration: underline;
+}
+#quick-menu .favotite{
+    position: absolute;
+    top: 32px;
+    width: 78px;
+    left: -2px;
+    border-style: solid;
+    border-color: #e5e5e5;
+    border-width: 0 1px 1px 1px;
+    padding-left: 15px;
+    background: #ffffff;
+    display: none;
+}
+#quick-menu .split{
+    width: 1px;
+    height: 14px;
+    background: #ccc;
+    padding: 0;
+    margin: 9px 5px;
+}
+#quick-menu .qr-code{
+    width: 175px;
+    height: 227px;
+    border: 1px solid #e5e5e5;
+    position: absolute;
+    top: 28px;
+    left: -58px;
+    background: #fff;
+    box-shadow: 0 0 5px #aaa;
+    display: none;
+}
+#quick-menu .qr-code::after {
+    content: '';
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -10px;
+    left: 85px;
+}
+#quick-menu li{
+    border-right-color: #f2f2f2;
+    border-left-color: #f2f2f2;
+}
+
+#quick-menu .mobile:hover .qr-code{
+    display: block;
+}
+ #logo, #search{
+     float: left;
+ }
+ #logo img{
+     width: 240px;
+ }
+ #search{
+     margin-top: 38px;
+     margin-left: 50px;
+ }
+#search .search-ipt{
+    width: 483px;
+    height: 32px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    text-indent: 10px;
+}
+#search .search-box{
+    border: 2px solid #FF0036;
+    width: 625px;
+    height: 36px;
+}
+#search .search-btn{
+    width: 132px;
+    height: 36px;
+    background: #FF0036;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    float: right;
+}
+#search .hot{
+    float: left;
+    border-right: 1px solid #ccc;
+    padding: 0 12px;
+    height: 15px;
+    line-height: 15px;
+}
+#search .hot a{
+    color: #999;
+    font-size: 12px;
+}
+#search .hot-query{
+    margin-top: 5px;
+}
+#search .hot-query-highlight a{
+    color: #FF0036;
+}
+#search .last{
+    border-right: none;
+}
+#search
